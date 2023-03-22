@@ -66,3 +66,33 @@
   // adiciona os listeners aos eventos de mouse
   document.addEventListener("mousedown", blockSelectAll);
   document.addEventListener("mouseup", unblockSelectAll);
+
+////DEV ZONE
+function protectBrowser() {
+  // Disable right-click context menu
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable text selection
+  document.addEventListener('selectstart', event => event.preventDefault());
+
+  // Disable drag and drop
+  document.addEventListener('dragstart', event => event.preventDefault());
+
+  // Disable the ability to copy and paste
+  document.addEventListener('copy', event => event.preventDefault());
+  document.addEventListener('cut', event => event.preventDefault());
+  document.addEventListener('paste', event => event.preventDefault());
+
+  // Disable the ability to open the developer console
+  document.addEventListener('keydown', event => {
+    if (event.keyCode === 123) {
+      event.preventDefault();
+    }
+  });
+  document.addEventListener('contextmenu', event => {
+    if (event.target.nodeName === 'HTML') {
+      event.preventDefault();
+    }
+  });
+}
+
