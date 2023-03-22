@@ -1,32 +1,14 @@
- body {
-  background-image: url('https://cdn.statically.io/gh/defiminds/portal/main/img/black.png');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
+.dark-mode {
+  background-color: #222;
+  color: #fff;
 }
-.light-mode {
-  background-image: url('https://cdn.statically.io/gh/defiminds/portal/main/img/white.png');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
+
+.dark-mode button {
+  background-color: #222;
+  color: #fff;
 }
-.buttonhome {
-  position: relative;
-  background-image: url('https://cdn.statically.io/gh/defiminds/portal/main/css/defiminds.jpeg');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-  border: none;
-  color: #FFFFFF;
-  height: 77px;
-  width: 111px;
-  overflow: hidden;
-  cursor: pointer;
-}
-  	*  { font-family: 'Segoe UI'; font-size: 15px; }
+
+*  { font-family: 'Segoe UI'; font-size: 15px; }
     
     #divResize1
     { 

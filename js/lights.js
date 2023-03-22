@@ -1,4 +1,4 @@
-function lights() {
- var element = document.body;
- element.classList.toggle("light-mode");
+function toggleDarkMode() {
+  var body = document.body;
+  body.classList.toggle("dark-mode");
 }
