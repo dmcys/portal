@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert Number to uint256</title>
+  </head>
+  <body>
+    <label for="inputNumber">Enter a number:</label>
+    <input type="number" id="inputNumber">
+    <button onclick="convertToUint256()">Convert to uint256</button>
+    <br><br>
+    <label for="outputUint256">uint256 value:</label>
+    <input type="text" id="outputUint256" readonly>
+    <script>
+      function convertToUint256() {
+        const inputNumber = document.getElementById("inputNumber").value;
+        const uint256Value = BigInt(inputNumber) * BigInt(10 ** 18);
+        document.getElementById("outputUint256").value = uint256Value.toString();
+      }
+    </script>
+  </body>
+</html>
